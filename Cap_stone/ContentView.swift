@@ -1,4 +1,3 @@
-//
 //  ContentView.swift
 //  Cap_stone
 //
@@ -16,6 +15,7 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .navigationBarBackButtonHidden()
     }
 }
 
