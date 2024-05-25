@@ -12,13 +12,17 @@ struct SignupView: View {
     var body: some View {
         ZStack{
             VStack{
+                Image("logo_and_weesh")
+                    .resizable()
+                    .frame(width: 250,height: 250)
+                    .padding(.bottom,20)
                 CustomTextFeild($viewModel.user.name, "이름")
                 DividerView()
                 CustomTextFeild($viewModel.user.id,  "아이디")
                 DividerView()
                 CustomSecureField($viewModel.user.password, "비밀번호")
                 DividerView()
-                CustomSecureField($viewModel.user.passwordcheck, "비밀번호확인")
+                CustomSecureField($viewModel.user.passwordcheck, "비밀번호 확인")
                 DividerView()
                 
                 Button{

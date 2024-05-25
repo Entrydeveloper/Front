@@ -49,19 +49,22 @@ struct CustomSecureField: View {
     }
 }
 
+
 struct CustomButton: View{
     var title: String
     
     init(_ title: String){
         self.title = title
     }
+    
     var body: some View{
         Text(title)
-            .foregroundStyle(Color.black)
+            .foregroundStyle(Color.white)
             .font(.system(size:23))
             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             .padding(EdgeInsets(top: 15, leading: 120, bottom: 15, trailing: 120))
-            .background(Color(red: 210 / 255, green: 227 / 255, blue: 200 / 255))
-            .cornerRadius(10)
+            .background(Color(red: 134 / 255, green: 194 / 255, blue: 99 / 255))
+            .cornerRadius(30)
     }
 }
+

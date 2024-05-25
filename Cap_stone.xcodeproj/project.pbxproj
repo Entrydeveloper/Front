@@ -23,6 +23,7 @@
 		069CEABE2BD7AD9900F33178 /* MypageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069CEABD2BD7AD9900F33178 /* MypageView.swift */; };
 		069CEAC02BD7ADCA00F33178 /* musicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069CEABF2BD7ADCA00F33178 /* musicView.swift */; };
 		069CEAC42BD7AE1D00F33178 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069CEAC32BD7AE1D00F33178 /* ChatView.swift */; };
+		06AA14482C021667009739D5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA14472C021667009739D5 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		069CEABD2BD7AD9900F33178 /* MypageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageView.swift; sourceTree = "<group>"; };
 		069CEABF2BD7ADCA00F33178 /* musicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicView.swift; sourceTree = "<group>"; };
 		069CEAC32BD7AE1D00F33178 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		06AA14472C021667009739D5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				069CEA702BD56E3100F33178 /* Login_Signup_VIewModel.swift */,
+				06AA14472C021667009739D5 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				069CEAC42BD7AE1D00F33178 /* ChatView.swift in Sources */,
 				067C75182BBDA57B0008D6D8 /* Login_Signup_Components.swift in Sources */,
 				069CEAC02BD7ADCA00F33178 /* musicView.swift in Sources */,
+				06AA14482C021667009739D5 /* HomeViewModel.swift in Sources */,
 				069CEABC2BD7AD7000F33178 /* MainView.swift in Sources */,
 				069CEABE2BD7AD9900F33178 /* MypageView.swift in Sources */,
 				067C75162BBD45670008D6D8 /* LoginView.swift in Sources */,

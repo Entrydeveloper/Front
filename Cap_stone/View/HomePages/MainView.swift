@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct MainView: View {
+    
     var body: some View {
-        Text("메인페이지")
+        VStack{
+            
+        }
     }
 }
 

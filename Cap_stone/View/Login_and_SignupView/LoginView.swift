@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct LoginView: View {
-    @StateObject var viewModel = LoginViewModel()
+    @StateObject private var viewModel = LoginViewModel()
     var body: some View {
         NavigationStack{
             ZStack{
                 VStack{
+                    Image("logo_and_weesh")
+                        .resizable()
+                        .frame(width: 250,height: 250)
+                        .padding(.bottom,20)
                     CustomTextFeild($viewModel.user.id, "아이디를 입력해주세요")
                     DividerView()
                     CustomSecureField($viewModel.user.password, "비밀번호를 입력해주세요")
@@ -24,18 +28,18 @@ struct LoginView: View {
                             Text("아이디 찾기")
                                 .foregroundStyle(.black)
                         }
-                        Text("|")
-                            .font(.system(size: 18))
-                            .padding(.bottom,3)
+                        Divider()
+                            .frame(width: 1,height: 20)
+                            .background(Color.black)
                         Button{
                             
                         }label: {
                             Text("비밀번호 찾기")
                                 .foregroundStyle(.black)
                         }
-                        Text("|")
-                            .font(.system(size: 15))
-                            .padding(.bottom,3)
+                        Divider()
+                            .frame(width: 1,height: 20)
+                            .background(Color.black)
                         NavigationLink(destination:{
                             SignupView()
                         },label: {
@@ -43,12 +47,13 @@ struct LoginView: View {
                                 .foregroundStyle(.black)
                         })
                     }.font(.system(size: 12))
-                    
-                    Button{
+                    Button(action: {
                         viewModel.login()
-                    }label: {
+                    }){
                         CustomButton("로그인")
-                            .padding(.top,50)
+                            .padding(.top, 50)
+                    }.navigationDestination(isPresented: $viewModel.isLoggedIn) {
+                            viewModel.destinationView
                     }
                 }
             }
