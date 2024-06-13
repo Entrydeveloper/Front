@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		063207BE2C198B44006E2588 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063207BD2C198B44006E2588 /* ChatViewModel.swift */; };
+		063207C02C198BD7006E2588 /* ColorOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063207BF2C198BD7006E2588 /* ColorOption.swift */; };
 		067C74E52BBD34B30008D6D8 /* Cap_stoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C74E42BBD34B30008D6D8 /* Cap_stoneApp.swift */; };
 		067C74E92BBD34B30008D6D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067C74E82BBD34B30008D6D8 /* Assets.xcassets */; };
 		067C74EC2BBD34B30008D6D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067C74EB2BBD34B30008D6D8 /* Preview Assets.xcassets */; };
@@ -25,6 +27,7 @@
 		069CEAC42BD7AE1D00F33178 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069CEAC32BD7AE1D00F33178 /* ChatView.swift */; };
 		06AA14482C021667009739D5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA14472C021667009739D5 /* HomeViewModel.swift */; };
 		06AA144C2C021D64009739D5 /* HomeViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA144B2C021D64009739D5 /* HomeViewComponents.swift */; };
+		06FDCF0C2C19AF4700730DCB /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FDCF0B2C19AF4700730DCB /* ColorPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		063207BD2C198B44006E2588 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		063207BF2C198BD7006E2588 /* ColorOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorOption.swift; sourceTree = "<group>"; };
 		067C74E12BBD34B30008D6D8 /* Cap_stone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cap_stone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		067C74E42BBD34B30008D6D8 /* Cap_stoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cap_stoneApp.swift; sourceTree = "<group>"; };
 		067C74E82BBD34B30008D6D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,7 +70,8 @@
 		069CEABF2BD7ADCA00F33178 /* musicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicView.swift; sourceTree = "<group>"; };
 		069CEAC32BD7AE1D00F33178 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		06AA14472C021667009739D5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		06AA144B2C021D64009739D5 /* HomeViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewComponents.swift; sourceTree = "<group>"; };
+		06AA144B2C021D64009739D5 /* HomeViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewComponents.swift; sourceTree = "<group>"; usesTabs = 0; wrapsLines = 1; };
+		06FDCF0B2C19AF4700730DCB /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,7 @@
 				069CEAAE2BD77A8600F33178 /* HomeView.swift */,
 				069CEAB82BD7AA9500F33178 /* HomePages */,
 				067C75122BBD45000008D6D8 /* Login_and_SignupView */,
+				06FDCF0B2C19AF4700730DCB /* ColorPickerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,6 +183,7 @@
 			children = (
 				069CEA702BD56E3100F33178 /* Login_Signup_VIewModel.swift */,
 				06AA14472C021667009739D5 /* HomeViewModel.swift */,
+				063207BD2C198B44006E2588 /* ChatViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -184,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				069CEA722BD5718000F33178 /* Login_Signup_Model.swift */,
+				063207BF2C198BD7006E2588 /* ColorOption.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -338,6 +347,9 @@
 				067C75182BBDA57B0008D6D8 /* Login_Signup_Components.swift in Sources */,
 				069CEAC02BD7ADCA00F33178 /* musicView.swift in Sources */,
 				06AA144C2C021D64009739D5 /* HomeViewComponents.swift in Sources */,
+				06FDCF0C2C19AF4700730DCB /* ColorPickerView.swift in Sources */,
+				063207C02C198BD7006E2588 /* ColorOption.swift in Sources */,
+				063207BE2C198B44006E2588 /* ChatViewModel.swift in Sources */,
 				06AA14482C021667009739D5 /* HomeViewModel.swift in Sources */,
 				069CEABC2BD7AD7000F33178 /* MainView.swift in Sources */,
 				069CEABE2BD7AD9900F33178 /* MypageView.swift in Sources */,

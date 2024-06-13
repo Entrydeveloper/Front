@@ -10,13 +10,14 @@ import SwiftUI
 
 struct MainViewTitle: View{
     var title: String
+    @EnvironmentObject private var themeManager: ThemeManager
     
     init(_ title: String){
         self.title = title
     }
     var body: some View{
         Text(title)
-            .foregroundStyle(Color(red: 134 / 255, green: 194 / 255, blue: 99 / 255))
+            .foregroundStyle(themeManager.selectedColor)
             .font(.system(size: 32))
             .fontWeight(.bold)
             .padding(.trailing,110)
@@ -24,6 +25,7 @@ struct MainViewTitle: View{
 }
 
 struct CounselingButton: View{
+    @EnvironmentObject private var themeManager: ThemeManager
     
     let counselingText: String
     let subText: String
@@ -50,7 +52,7 @@ struct CounselingButton: View{
                     .padding(10)
                     .foregroundStyle(Color.white)
                     .fontWeight(.bold)
-                    .background(Color(red: 76 / 255, green:160 / 255, blue: 28/255, opacity: 0.6))
+                    .background(themeManager.selectedColor)
                     .cornerRadius(30)
                 
             }
