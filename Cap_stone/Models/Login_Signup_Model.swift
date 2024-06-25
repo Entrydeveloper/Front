@@ -8,8 +8,8 @@
 import Foundation
 
 struct Signup{
-    var name: String
-    var id : String
+    var id: String
+    var email: String
     var password : String
     var passwordcheck : String
 }

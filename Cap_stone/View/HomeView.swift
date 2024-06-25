@@ -25,7 +25,7 @@ struct HomeView: View {
                         .tag(2)
                     ChatView()
 //                       .badge("!") 이거 메세지에 쓰기
-                        .tabItem {
+                        .tabItem {          
                             Image(systemName: "ellipsis.message")
                         }
                         .tag(3)

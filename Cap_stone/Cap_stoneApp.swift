@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Cap_stoneApp: App {
+    @StateObject private var imageData = ImageData()
     var body: some Scene {
         WindowGroup {
             LoginView()
+                .environmentObject(imageData)
+                .environmentObject(ThemeManager())
         }
     }
 }

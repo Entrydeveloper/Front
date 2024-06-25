@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060E72BC2C25C8D1008899B7 /* JWTcheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060E72BB2C25C8D1008899B7 /* JWTcheck.swift */; };
+		060E72BE2C25CB46008899B7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060E72BD2C25CB46008899B7 /* User.swift */; };
+		060E72C02C26A095008899B7 /* MyPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060E72BF2C26A095008899B7 /* MyPageViewModel.swift */; };
 		063207BE2C198B44006E2588 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063207BD2C198B44006E2588 /* ChatViewModel.swift */; };
 		063207C02C198BD7006E2588 /* ColorOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063207BF2C198BD7006E2588 /* ColorOption.swift */; };
+		065623D42C2A628600BBEECE /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065623D32C2A628600BBEECE /* ImageData.swift */; };
+		065623D62C2A631400BBEECE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065623D52C2A631400BBEECE /* ImagePicker.swift */; };
+		0677C37B2C24F63F0005DFCE /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 0677C37A2C24F63F0005DFCE /* SwiftKeychainWrapper */; };
 		067C74E52BBD34B30008D6D8 /* Cap_stoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C74E42BBD34B30008D6D8 /* Cap_stoneApp.swift */; };
 		067C74E92BBD34B30008D6D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067C74E82BBD34B30008D6D8 /* Assets.xcassets */; };
 		067C74EC2BBD34B30008D6D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067C74EB2BBD34B30008D6D8 /* Preview Assets.xcassets */; };
@@ -27,6 +33,8 @@
 		069CEAC42BD7AE1D00F33178 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069CEAC32BD7AE1D00F33178 /* ChatView.swift */; };
 		06AA14482C021667009739D5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA14472C021667009739D5 /* HomeViewModel.swift */; };
 		06AA144C2C021D64009739D5 /* HomeViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA144B2C021D64009739D5 /* HomeViewComponents.swift */; };
+		06E84D642C21991800F05FEF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 06E84D632C21991800F05FEF /* Alamofire */; };
+		06E84D662C21991800F05FEF /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 06E84D652C21991800F05FEF /* AlamofireDynamic */; };
 		06FDCF0C2C19AF4700730DCB /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FDCF0B2C19AF4700730DCB /* ColorPickerView.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,8 +56,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06006AB92C22C5B900BE0511 /* Cap-stone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Cap-stone-Info.plist"; sourceTree = SOURCE_ROOT; };
+		060E72BB2C25C8D1008899B7 /* JWTcheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTcheck.swift; sourceTree = "<group>"; };
+		060E72BD2C25CB46008899B7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		060E72BF2C26A095008899B7 /* MyPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewModel.swift; sourceTree = "<group>"; };
 		063207BD2C198B44006E2588 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		063207BF2C198BD7006E2588 /* ColorOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorOption.swift; sourceTree = "<group>"; };
+		065623D32C2A628600BBEECE /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		065623D52C2A631400BBEECE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		067C74E12BBD34B30008D6D8 /* Cap_stone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cap_stone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		067C74E42BBD34B30008D6D8 /* Cap_stoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cap_stoneApp.swift; sourceTree = "<group>"; };
 		067C74E82BBD34B30008D6D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06E84D642C21991800F05FEF /* Alamofire in Frameworks */,
+				06E84D662C21991800F05FEF /* AlamofireDynamic in Frameworks */,
+				0677C37B2C24F63F0005DFCE /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +116,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0677C3792C24F63F0005DFCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		067C74D82BBD34B30008D6D8 = {
 			isa = PBXGroup;
 			children = (
 				067C74E32BBD34B30008D6D8 /* Cap_stone */,
 				067C74FE2BBD34B40008D6D8 /* Cap_stoneUITests */,
 				067C74E22BBD34B30008D6D8 /* Products */,
+				0677C3792C24F63F0005DFCE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +146,7 @@
 		067C74E32BBD34B30008D6D8 /* Cap_stone */ = {
 			isa = PBXGroup;
 			children = (
+				06006AB92C22C5B900BE0511 /* Cap-stone-Info.plist */,
 				069CEA6F2BD56E0800F33178 /* Models */,
 				069CEA6D2BD56DF300F33178 /* ViewModels */,
 				069CEA6C2BD56DD300F33178 /* View */,
@@ -163,6 +189,7 @@
 				067C75132BBD45370008D6D8 /* SignupView.swift */,
 				067C75152BBD45670008D6D8 /* LoginView.swift */,
 				067C75172BBDA57B0008D6D8 /* Login_Signup_Components.swift */,
+				060E72BB2C25C8D1008899B7 /* JWTcheck.swift */,
 			);
 			path = Login_and_SignupView;
 			sourceTree = "<group>";
@@ -184,6 +211,8 @@
 				069CEA702BD56E3100F33178 /* Login_Signup_VIewModel.swift */,
 				06AA14472C021667009739D5 /* HomeViewModel.swift */,
 				063207BD2C198B44006E2588 /* ChatViewModel.swift */,
+				060E72BF2C26A095008899B7 /* MyPageViewModel.swift */,
+				065623D52C2A631400BBEECE /* ImagePicker.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -193,6 +222,8 @@
 			children = (
 				069CEA722BD5718000F33178 /* Login_Signup_Model.swift */,
 				063207BF2C198BD7006E2588 /* ColorOption.swift */,
+				060E72BD2C25CB46008899B7 /* User.swift */,
+				065623D32C2A628600BBEECE /* ImageData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -225,6 +256,11 @@
 			dependencies = (
 			);
 			name = Cap_stone;
+			packageProductDependencies = (
+				06E84D632C21991800F05FEF /* Alamofire */,
+				06E84D652C21991800F05FEF /* AlamofireDynamic */,
+				0677C37A2C24F63F0005DFCE /* SwiftKeychainWrapper */,
+			);
 			productName = Cap_stone;
 			productReference = 067C74E12BBD34B30008D6D8 /* Cap_stone.app */;
 			productType = "com.apple.product-type.application";
@@ -272,6 +308,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
@@ -297,6 +336,10 @@
 				Base,
 			);
 			mainGroup = 067C74D82BBD34B30008D6D8;
+			packageReferences = (
+				06B251F02C2195CA00323998 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				060A9BFD2C24A8CD00F28C13 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = 067C74E22BBD34B30008D6D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +384,9 @@
 			files = (
 				067C75142BBD45370008D6D8 /* SignupView.swift in Sources */,
 				069CEAAF2BD77A8600F33178 /* HomeView.swift in Sources */,
+				060E72BC2C25C8D1008899B7 /* JWTcheck.swift in Sources */,
+				065623D62C2A631400BBEECE /* ImagePicker.swift in Sources */,
+				065623D42C2A628600BBEECE /* ImageData.swift in Sources */,
 				069CEA732BD5718000F33178 /* Login_Signup_Model.swift in Sources */,
 				069CEA712BD56E3100F33178 /* Login_Signup_VIewModel.swift in Sources */,
 				069CEAC42BD7AE1D00F33178 /* ChatView.swift in Sources */,
@@ -352,6 +398,8 @@
 				063207BE2C198B44006E2588 /* ChatViewModel.swift in Sources */,
 				06AA14482C021667009739D5 /* HomeViewModel.swift in Sources */,
 				069CEABC2BD7AD7000F33178 /* MainView.swift in Sources */,
+				060E72BE2C25CB46008899B7 /* User.swift in Sources */,
+				060E72C02C26A095008899B7 /* MyPageViewModel.swift in Sources */,
 				069CEABE2BD7AD9900F33178 /* MypageView.swift in Sources */,
 				067C75162BBD45670008D6D8 /* LoginView.swift in Sources */,
 				067C74E52BBD34B30008D6D8 /* Cap_stoneApp.swift in Sources */,
@@ -520,6 +568,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Cap_stone/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cap-stone-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -548,6 +597,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Cap_stone/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Cap-stone-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -678,6 +728,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		060A9BFD2C24A8CD00F28C13 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		06B251F02C2195CA00323998 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0677C37A2C24F63F0005DFCE /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 060A9BFD2C24A8CD00F28C13 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		06E84D632C21991800F05FEF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06B251F02C2195CA00323998 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		06E84D652C21991800F05FEF /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06B251F02C2195CA00323998 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 067C74D92BBD34B30008D6D8 /* Project object */;
 }

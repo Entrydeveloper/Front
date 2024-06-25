@@ -53,14 +53,20 @@ struct LoginView: View {
                         CustomButton("로그인")
                             .padding(.top, 50)
                     }.navigationDestination(isPresented: $viewModel.isLoggedIn) {
-                            viewModel.destinationView
+                        viewModel.destinationView
+                    }.alert(isPresented: $viewModel.alerterror){
+                        Alert(title: Text("로그인 실패"),
+                        message: Text("아이디와 비밀번호가 일치하지 않습니다"),
+                        dismissButton: .default(Text("확인")))
                     }
                 }
             }
         }
+        .navigationBarBackButtonHidden()
     }
 }
 
 #Preview {
     LoginView()
+        .environmentObject(ThemeManager())
 }
