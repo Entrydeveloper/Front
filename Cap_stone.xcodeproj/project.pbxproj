@@ -14,7 +14,9 @@
 		063207C02C198BD7006E2588 /* ColorOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063207BF2C198BD7006E2588 /* ColorOption.swift */; };
 		065623D42C2A628600BBEECE /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065623D32C2A628600BBEECE /* ImageData.swift */; };
 		065623D62C2A631400BBEECE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065623D52C2A631400BBEECE /* ImagePicker.swift */; };
+		0664A6862C2BB41F00E68CE6 /* SocketIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0664A6852C2BB41F00E68CE6 /* SocketIO.swift */; };
 		0677C37B2C24F63F0005DFCE /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 0677C37A2C24F63F0005DFCE /* SwiftKeychainWrapper */; };
+		067BBA0A2C2B318200EACB33 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 067BBA092C2B318200EACB33 /* SocketIO */; };
 		067C74E52BBD34B30008D6D8 /* Cap_stoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C74E42BBD34B30008D6D8 /* Cap_stoneApp.swift */; };
 		067C74E92BBD34B30008D6D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067C74E82BBD34B30008D6D8 /* Assets.xcassets */; };
 		067C74EC2BBD34B30008D6D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067C74EB2BBD34B30008D6D8 /* Preview Assets.xcassets */; };
@@ -24,6 +26,8 @@
 		067C75142BBD45370008D6D8 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C75132BBD45370008D6D8 /* SignupView.swift */; };
 		067C75162BBD45670008D6D8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C75152BBD45670008D6D8 /* LoginView.swift */; };
 		067C75182BBDA57B0008D6D8 /* Login_Signup_Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C75172BBDA57B0008D6D8 /* Login_Signup_Components.swift */; };
+		067D64242C2CCF930075D0E0 /* message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067D64232C2CCF930075D0E0 /* message.swift */; };
+		067D64272C2FF8C00075D0E0 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067D64262C2FF8C00075D0E0 /* CommentView.swift */; };
 		069CEA712BD56E3100F33178 /* Login_Signup_VIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069CEA702BD56E3100F33178 /* Login_Signup_VIewModel.swift */; };
 		069CEA732BD5718000F33178 /* Login_Signup_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069CEA722BD5718000F33178 /* Login_Signup_Model.swift */; };
 		069CEAAF2BD77A8600F33178 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069CEAAE2BD77A8600F33178 /* HomeView.swift */; };
@@ -64,6 +68,7 @@
 		063207BF2C198BD7006E2588 /* ColorOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorOption.swift; sourceTree = "<group>"; };
 		065623D32C2A628600BBEECE /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		065623D52C2A631400BBEECE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		0664A6852C2BB41F00E68CE6 /* SocketIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIO.swift; sourceTree = "<group>"; };
 		067C74E12BBD34B30008D6D8 /* Cap_stone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cap_stone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		067C74E42BBD34B30008D6D8 /* Cap_stoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cap_stoneApp.swift; sourceTree = "<group>"; };
 		067C74E82BBD34B30008D6D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +81,8 @@
 		067C75132BBD45370008D6D8 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		067C75152BBD45670008D6D8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		067C75172BBDA57B0008D6D8 /* Login_Signup_Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Signup_Components.swift; sourceTree = "<group>"; };
+		067D64232C2CCF930075D0E0 /* message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = message.swift; sourceTree = "<group>"; };
+		067D64262C2FF8C00075D0E0 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 		069CEA702BD56E3100F33178 /* Login_Signup_VIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Signup_VIewModel.swift; sourceTree = "<group>"; };
 		069CEA722BD5718000F33178 /* Login_Signup_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Signup_Model.swift; sourceTree = "<group>"; };
 		069CEAAE2BD77A8600F33178 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -94,6 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06E84D642C21991800F05FEF /* Alamofire in Frameworks */,
+				067BBA0A2C2B318200EACB33 /* SocketIO in Frameworks */,
 				06E84D662C21991800F05FEF /* AlamofireDynamic in Frameworks */,
 				0677C37B2C24F63F0005DFCE /* SwiftKeychainWrapper in Frameworks */,
 			);
@@ -213,6 +221,7 @@
 				063207BD2C198B44006E2588 /* ChatViewModel.swift */,
 				060E72BF2C26A095008899B7 /* MyPageViewModel.swift */,
 				065623D52C2A631400BBEECE /* ImagePicker.swift */,
+				0664A6852C2BB41F00E68CE6 /* SocketIO.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -224,6 +233,7 @@
 				063207BF2C198BD7006E2588 /* ColorOption.swift */,
 				060E72BD2C25CB46008899B7 /* User.swift */,
 				065623D32C2A628600BBEECE /* ImageData.swift */,
+				067D64232C2CCF930075D0E0 /* message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,6 +246,7 @@
 				069CEABF2BD7ADCA00F33178 /* musicView.swift */,
 				069CEAC32BD7AE1D00F33178 /* ChatView.swift */,
 				06AA144B2C021D64009739D5 /* HomeViewComponents.swift */,
+				067D64262C2FF8C00075D0E0 /* CommentView.swift */,
 			);
 			path = HomePages;
 			sourceTree = "<group>";
@@ -260,6 +271,7 @@
 				06E84D632C21991800F05FEF /* Alamofire */,
 				06E84D652C21991800F05FEF /* AlamofireDynamic */,
 				0677C37A2C24F63F0005DFCE /* SwiftKeychainWrapper */,
+				067BBA092C2B318200EACB33 /* SocketIO */,
 			);
 			productName = Cap_stone;
 			productReference = 067C74E12BBD34B30008D6D8 /* Cap_stone.app */;
@@ -339,6 +351,7 @@
 			packageReferences = (
 				06B251F02C2195CA00323998 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				060A9BFD2C24A8CD00F28C13 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				067BBA082C2B317400EACB33 /* XCRemoteSwiftPackageReference "socket" */,
 			);
 			productRefGroup = 067C74E22BBD34B30008D6D8 /* Products */;
 			projectDirPath = "";
@@ -394,12 +407,15 @@
 				069CEAC02BD7ADCA00F33178 /* musicView.swift in Sources */,
 				06AA144C2C021D64009739D5 /* HomeViewComponents.swift in Sources */,
 				06FDCF0C2C19AF4700730DCB /* ColorPickerView.swift in Sources */,
+				067D64242C2CCF930075D0E0 /* message.swift in Sources */,
 				063207C02C198BD7006E2588 /* ColorOption.swift in Sources */,
 				063207BE2C198B44006E2588 /* ChatViewModel.swift in Sources */,
 				06AA14482C021667009739D5 /* HomeViewModel.swift in Sources */,
 				069CEABC2BD7AD7000F33178 /* MainView.swift in Sources */,
 				060E72BE2C25CB46008899B7 /* User.swift in Sources */,
+				067D64272C2FF8C00075D0E0 /* CommentView.swift in Sources */,
 				060E72C02C26A095008899B7 /* MyPageViewModel.swift in Sources */,
+				0664A6862C2BB41F00E68CE6 /* SocketIO.swift in Sources */,
 				069CEABE2BD7AD9900F33178 /* MypageView.swift in Sources */,
 				067C75162BBD45670008D6D8 /* LoginView.swift in Sources */,
 				067C74E52BBD34B30008D6D8 /* Cap_stoneApp.swift in Sources */,
@@ -738,6 +754,14 @@
 				minimumVersion = 4.0.1;
 			};
 		};
+		067BBA082C2B317400EACB33 /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		06B251F02C2195CA00323998 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -753,6 +777,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 060A9BFD2C24A8CD00F28C13 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
 			productName = SwiftKeychainWrapper;
+		};
+		067BBA092C2B318200EACB33 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 067BBA082C2B317400EACB33 /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
 		};
 		06E84D632C21991800F05FEF /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

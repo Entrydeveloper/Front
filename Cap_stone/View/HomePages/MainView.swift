@@ -2,6 +2,7 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject private var viewModel = MainViewModel()
+    @StateObject private var chatViewModel = ChatViewModel()
     @EnvironmentObject private var themeManager: ThemeManager
     @State private var showImagePicker = false
     @ObservedObject var imageData = ImageData()
@@ -13,6 +14,7 @@ struct MainView: View {
                 Image(uiImage: selectedImage)
                     .resizable()
                     .frame(width: 290, height: 250)
+                    .cornerRadius(10)
             } else {
                 Image(systemName: "photo")
                     .resizable()
@@ -28,24 +30,24 @@ struct MainView: View {
                     .sheet(isPresented: $showImagePicker) {
                         ImagePicker(selectedImage: $imageData.selectedImage)
                     }
-                    HStack{
+                    HStack {
                         MainViewTitle("실시간")
-                            .padding(.leading,50)
+                            .padding(.leading, 50)
                         Spacer()
                     }
-                    HStack{
+                    HStack {
                         Text("또상 랭킹")
                             .font(.system(size: 25))
-                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                            .padding(.leading,50)
+                            .fontWeight(.bold)
+                            .padding(.leading, 50)
                         Spacer()
                     }
-                    HStack{
-                        VStack{
+                    HStack {
+                        VStack {
                             Image("user_profil")
                                 .resizable()
-                                .frame(width: 70,height: 70)
-                                .padding(.top,20)
+                                .frame(width: 70, height: 70)
+                                .padding(.top, 20)
                             Text("이승보")
                                 .font(.system(size: 22))
                             ZStack {
@@ -56,14 +58,14 @@ struct MainView: View {
                                 Text("2")
                                     .font(.system(size: 36))
                                     .foregroundColor(.green)
-                                    .padding(.bottom,20)
+                                    .padding(.bottom, 20)
                             }
                             .padding(.top, 10)
                         }
-                        VStack{
+                        VStack {
                             Image("user_profil")
                                 .resizable()
-                                .frame(width: 70,height: 70)
+                                .frame(width: 70, height: 70)
                             Text("권가령")
                                 .font(.system(size: 22))
                             ZStack {
@@ -74,16 +76,16 @@ struct MainView: View {
                                 Text("1")
                                     .font(.system(size: 36))
                                     .foregroundColor(.green)
-                                    .padding(.bottom,40)
+                                    .padding(.bottom, 40)
                             }
                             .padding(.top, 10)
                         }
                         .padding()
-                        VStack{
+                        VStack {
                             Image("user_profil")
                                 .resizable()
-                                .frame(width: 70,height: 70)
-                                .padding(.top,40)
+                                .frame(width: 70, height: 70)
+                                .padding(.top, 40)
                             Text("성홍제")
                                 .font(.system(size: 22))
                             ZStack {
@@ -94,8 +96,7 @@ struct MainView: View {
                                 Text("3")
                                     .font(.system(size: 36))
                                     .foregroundColor(.green)
-                                    
-                                }
+                            }
                             .padding(.top, 10)
                         }
                     }
@@ -103,10 +104,10 @@ struct MainView: View {
                 } else {
                     MainViewTitle("익명 상담하기")
                     CounselingButton("또래상담사와", "채팅하기") {
-                        viewModel.teacherCounselor()
+                        viewModel.studentCounselor()
                     }
                     CounselingButton("위클쌤과", "상담하기") {
-                        viewModel.studentCounselor()
+                        viewModel.teacherCounselor(chatViewModel: chatViewModel)
                     }
                 }
             } else {
@@ -115,6 +116,7 @@ struct MainView: View {
             Spacer()
         }
         .onAppear {
+            chatViewModel.fetchUserIdAndChatRooms()
             viewModel.fetchUserId()
         }
     }
